@@ -1,6 +1,6 @@
 export type ClaudeModelId =
-  | 'claude-opus-4-6-20260301'
-  | 'claude-sonnet-4-6-20260301'
+  | 'claude-opus-4-6'
+  | 'claude-sonnet-4-6'
   | 'claude-haiku-4-5-20251001';
 
 export interface ClaudeModelDefinition {
@@ -17,22 +17,23 @@ export interface ClaudeModelDefinition {
 
 export const CLAUDE_MODEL_DEFINITIONS: ClaudeModelDefinition[] = [
   {
-    id: 'claude-opus-4-6-20260301',
+    id: 'claude-opus-4-6',
     name: 'Claude Opus 4.6',
-    description: 'Newest Opus release with the strongest reasoning skills',
+    description: 'The most intelligent model for building agents and coding',
     supportsImages: true,
     aliases: [
-      'claude-opus-4-6-20260301',
       'claude-opus-4-6',
       'claude-opus-4.6',
       'claude-opus-4',
       'claude-opus',
-      'opus-4-6-20260301',
       'opus-4-6',
       'opus-4.6',
       'opus-4',
       'opus',
       // Legacy aliases
+      'claude-opus-4-5-20251101',
+      'claude-opus-4-5',
+      'claude-opus-4.5',
       'claude-opus-4-1-20250805',
       'claude-opus-4-1',
       'claude-opus-4.1',
@@ -42,17 +43,15 @@ export const CLAUDE_MODEL_DEFINITIONS: ClaudeModelDefinition[] = [
     ],
   },
   {
-    id: 'claude-sonnet-4-6-20260301',
+    id: 'claude-sonnet-4-6',
     name: 'Claude Sonnet 4.6',
-    description: 'Balanced Sonnet tier with a large context window',
+    description: 'The best combination of speed and intelligence',
     supportsImages: true,
     aliases: [
-      'claude-sonnet-4-6-20260301',
       'claude-sonnet-4-6',
       'claude-sonnet-4.6',
       'claude-sonnet-4',
       'claude-sonnet',
-      'sonnet-4-6-20260301',
       'sonnet-4-6',
       'sonnet-4.6',
       'sonnet-4',
@@ -70,7 +69,7 @@ export const CLAUDE_MODEL_DEFINITIONS: ClaudeModelDefinition[] = [
   {
     id: 'claude-haiku-4-5-20251001',
     name: 'Claude Haiku 4.5',
-    description: 'Fastest Haiku tier for lightweight tasks',
+    description: 'The fastest model with near-frontier intelligence',
     supportsImages: true,
     aliases: [
       'claude-haiku-4-5-20251001',
@@ -91,7 +90,7 @@ export const CLAUDE_MODEL_DEFINITIONS: ClaudeModelDefinition[] = [
   },
 ];
 
-export const CLAUDE_DEFAULT_MODEL: ClaudeModelId = 'claude-sonnet-4-6-20260301';
+export const CLAUDE_DEFAULT_MODEL: ClaudeModelId = 'claude-sonnet-4-6';
 
 const CLAUDE_MODEL_ALIAS_MAP: Record<string, ClaudeModelId> = CLAUDE_MODEL_DEFINITIONS.reduce(
   (map, definition) => {
