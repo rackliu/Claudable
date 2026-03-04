@@ -556,7 +556,7 @@ function resolveModelId(model?: string | null): string {
  * @param projectId - Project ID
  * @param projectPath - Project directory path
  * @param instruction - Command to pass to AI
- * @param model - Claude model to use (default: claude-sonnet-4-5-20250929)
+ * @param model - Claude model to use (default: claude-sonnet-4-6-20260301)
  * @param sessionId - Previous session ID (maintains conversation context)
  * @param requestId - (Optional) User request tracking ID
  */
@@ -1150,7 +1150,7 @@ export async function executeClaude(
  * @param projectId - Project ID
  * @param projectPath - Project directory path
  * @param initialPrompt - Initial prompt
- * @param model - Claude model to use (default: claude-sonnet-4-5-20250929)
+ * @param model - Claude model to use (default: claude-sonnet-4-6-20260301)
  * @param requestId - (Optional) User request tracking ID
  */
 export async function initializeNextJsProject(
@@ -1180,7 +1180,7 @@ Set up the basic project structure and implement the requested features.
  * @param projectId - Project ID
  * @param projectPath - Project directory path
  * @param instruction - Change request command
- * @param model - Claude model to use (default: claude-sonnet-4-5-20250929)
+ * @param model - Claude model to use (default: claude-sonnet-4-6-20260301)
  * @param sessionId - Session ID
  * @param requestId - (Optional) User request tracking ID
  */

@@ -43,9 +43,13 @@ const CURSOR_MODEL_ALIASES: Record<string, string> = {
   'claude-sonnet-4': 'sonnet-4',
   'sonnet-4.0-thinking': 'sonnet-4-thinking',
   'claude-sonnet-4-thinking': 'sonnet-4-thinking',
+  'opus-4.6': 'sonnet-4',
   'opus-4.1': 'sonnet-4',
+  'claude-opus-4.6': 'sonnet-4',
   'claude-opus-4.1': 'sonnet-4',
+  'claude-opus-46': 'sonnet-4',
   'claude-opus-41': 'sonnet-4',
+  'claude-opus-4_6': 'sonnet-4',
   'claude-opus-4_1': 'sonnet-4',
 };
 

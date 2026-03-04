@@ -1,6 +1,6 @@
 export type ClaudeModelId =
-  | 'claude-opus-4-1-20250805'
-  | 'claude-sonnet-4-5-20250929'
+  | 'claude-opus-4-6-20260301'
+  | 'claude-sonnet-4-6-20260301'
   | 'claude-haiku-4-5-20251001';
 
 export interface ClaudeModelDefinition {
@@ -17,42 +17,50 @@ export interface ClaudeModelDefinition {
 
 export const CLAUDE_MODEL_DEFINITIONS: ClaudeModelDefinition[] = [
   {
-    id: 'claude-opus-4-1-20250805',
-    name: 'Claude Opus 4.1',
+    id: 'claude-opus-4-6-20260301',
+    name: 'Claude Opus 4.6',
     description: 'Newest Opus release with the strongest reasoning skills',
     supportsImages: true,
     aliases: [
+      'claude-opus-4-6-20260301',
+      'claude-opus-4-6',
+      'claude-opus-4.6',
+      'claude-opus-4',
+      'claude-opus',
+      'opus-4-6-20260301',
+      'opus-4-6',
+      'opus-4.6',
+      'opus-4',
+      'opus',
+      // Legacy aliases
       'claude-opus-4-1-20250805',
       'claude-opus-4-1',
       'claude-opus-4.1',
-      'claude-opus-4',
-      'claude-opus',
-      'opus-4-1-20250805',
-      'opus-4-1',
-      'opus-4.1',
-      'opus-4',
-      'opus',
       'claude-3-opus',
       'claude-3-opus-20240229',
       'claude-3-opus-latest',
     ],
   },
   {
-    id: 'claude-sonnet-4-5-20250929',
-    name: 'Claude Sonnet 4.5',
+    id: 'claude-sonnet-4-6-20260301',
+    name: 'Claude Sonnet 4.6',
     description: 'Balanced Sonnet tier with a large context window',
     supportsImages: true,
     aliases: [
+      'claude-sonnet-4-6-20260301',
+      'claude-sonnet-4-6',
+      'claude-sonnet-4.6',
+      'claude-sonnet-4',
+      'claude-sonnet',
+      'sonnet-4-6-20260301',
+      'sonnet-4-6',
+      'sonnet-4.6',
+      'sonnet-4',
+      'sonnet',
+      // Legacy aliases
       'claude-sonnet-4-5-20250929',
       'claude-sonnet-4-5',
       'claude-sonnet-4.5',
-      'claude-sonnet-4',
-      'claude-sonnet',
-      'sonnet-4-5-20250929',
-      'sonnet-4-5',
-      'sonnet-4.5',
-      'sonnet-4',
-      'sonnet',
       'claude-3.5-sonnet',
       'claude-3-5-sonnet',
       'claude-3-5-sonnet-20241022',
@@ -83,7 +91,7 @@ export const CLAUDE_MODEL_DEFINITIONS: ClaudeModelDefinition[] = [
   },
 ];
 
-export const CLAUDE_DEFAULT_MODEL: ClaudeModelId = 'claude-sonnet-4-5-20250929';
+export const CLAUDE_DEFAULT_MODEL: ClaudeModelId = 'claude-sonnet-4-6-20260301';
 
 const CLAUDE_MODEL_ALIAS_MAP: Record<string, ClaudeModelId> = CLAUDE_MODEL_DEFINITIONS.reduce(
   (map, definition) => {
